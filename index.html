@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-  .
   <!-- ESTE ES UN COMENTARIO-->
   <head>
     <title>Portafolio profesional - Zaira Rubí Hernández Cárdenas</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!--TODO LO QUE SE COLOQUE AQUI LO VA A VER EL USUARIO-->
@@ -12,16 +12,23 @@
       <h4>Zaira Rubí Hernández Cárdenas</h4>
     </header>
     <!--MENU DE NAVEGACIÓN-->
+    <!--El # es el link o ID-->
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mí</a>
-      <a href="#">Mi experiencia</a>
-      <a href="#">Contáctame</a>
+      <div id="menu">
+        <a href="#bienvenida">Sobre mí</a>
+        <a href="#proyectos">Proyectos tecnológicos</a>
+        <a href="#competencias">Competencias profesionales</a>
+        <a href="#contacto">Contáctame</a>
+      </div>
     </nav>
     <!--CONTENIDO PRINCIPAL-->
     <main>
-      <section>
+      <section id="bienvenida">
         <h2>Bienvenidos a mi portafolio profesional</h2>
+        <p>
+          Mi nombre es<mark> Zaira Rubí Hernández Cárdenas</mark> soy
+          especialista en <strong> Tecnologías de la información</strong>
+        </p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -33,11 +40,94 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <img alt="Foto de perfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZCqN_PCIgdZ78mo26xfVTaHA6iG-jNZ-CQ&s">
+        <p>Mi <small>frase favorita es:</small> <i> ITS TV TIME!!!</i></p>
+        <img
+          alt="Foto de perfil"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZCqN_PCIgdZ78mo26xfVTaHA6iG-jNZ-CQ&s"
+        />
+      </section>
+      <section id="proyectos">
+        <h2>Proyectos tecnológicos</h2>
+        <div class="lista-proyectos">
+          <article class="proyecto">
+            <h3>Sistema de estadías</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              eum tenetur quia ab veritatis ratione!
+            </p>
+          </article>
+          <article class="proyecto">
+            <h3>Sistema de veterinarias</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              eum tenetur quia ab veritatis ratione!
+            </p>
+          </article>
+          <article class="proyecto">
+            <h3>Sistema de florerias</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              eum tenetur quia ab veritatis ratione!
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="competencias">
+        <h2>Competencias profesionales</h2>
+        <h3>Tecnologías y lenguajes</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>Python</li>
+        </ul>
+        <h3>Dominio de habilidades</h3>
+        <div>
+          <label>HTML</label>
+          <progress min="0" max="100" value="50">50%</progress>
+        </div>
+        <div>
+          <label>CSS</label>
+          <progress min="0" max="100" value="40">40%</progress>
+        </div>
+        <div>
+          <label>JavaScript</label>
+          <progress min="0" max="100" value="50">50%</progress>
+        </div>
+        <div>
+          <label>C#</label>
+          <progress min="0" max="100" value="80">80%</progress>
+        </div>
+        <div>
+          <label>Python</label>
+          <progress min="0" max="100" value="20">20%</progress>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Contáctame</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          inventore officia cumque perspiciatis quos dolores eum possimus
+          repellat ipsam maxime.
+        </p>
+        <form>
+        <div class="campos">
+          <label>Nombre completo</label>
+          <input type="text" value="" placeholder="Ingresa tu nombre"/>
+        </div>
+        <div class="campos">
+          <label>Teléfono</label>
+          <input type="text" value="" placeholder="Ingresa tu teléfono"/>
+        </div>
+        <div class="campos">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
       </section>
     </main>
     <footer>
-        <p>&copy; 2025 Todos los derechos reservados</p>
+      <p>&copy; 2025 Todos los derechos reservados</p>
     </footer>
   </body>
 </html>

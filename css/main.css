@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: auto;
+}
+
+h1,h2,h3{
+    font-family: "Fjalla One", sans-serif;
+}
+body{
+    font-family: "Public Sans", sans-serif;
+}
+
+header {
+    background-color: #BC66F4;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: solid 5px #44215c; /* ESTE ES UN COMENTARIO */
+    padding: 30px 0; /*padding: 30px(arriba/abajo) 0(derecha/izquierda)*/
+    /*TOP RIGHT BOTTOM LEFT*/
+}
+
+nav{
+    background-color: #3b3c81;
+    text-align: center;
+    padding: 20px 20px;
+    border-bottom: solid 5px #8880a1;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 30%;
+    background-color: #7b6eac;
+    border-width: solid 3px #1d062e;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #220a31;
+}
+
+nav a:hover{
+    background-color: #a598d4;
+}
+
+#bienvenida{
+    padding: 30px;
+    text-align: center;
+}
+
+#bienvenida p{
+    padding: 10px;
+}
+
+.lista-proyectos{
+    display: flex;
+}
+
+#proyectos{
+    background-color: #afdbe9;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.proyecto{
+    width: 30%;
+    border: solid 2px #44215c;
+    padding: 10px;
+    border-radius: 10px; /*redondea bordes*/
+}
+
+.proyecto h3{
+    color: #21154d;
+}
+
+#competencias{
+    padding: 30px 30px;
+}
+
+#competencias h2{
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}
+
+#competencias ul{
+    list-style-type: square;
+    padding: 10px;
+    display:flex;
+    clear: both;
+}
+
+#competencias ul li{
+    background-color: #3b88ac;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    clear: both;
+}
+
+#contacto{
+    padding: 30px;
+    border-top:2px dashed #3b88ac;
+}
+
+.campos{
+    padding: 10px;
+    clear: both;
+    font-size: 16px;
+}
+
+.campos label{
+    font-size: 20px;
+}
+
+.campos input{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #e9e8ec;
+    border: solid 2px #67a6b9;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.campos input:hover{
+    background-color: #ffffff;
+}
+
+.campos button{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #218f21;
+    color: #ffffff;
+    width: 20%;
+    border: none;
+}
+
+.campos button:hover{
+    background-color: #55be55;
+}
+
+footer{
+    padding: 30px 20px;
+    background-color: #3b3c81;
+    color: #ffffff;
+    font-size: 14px;
+    border-top: solid 5px #7b6eac;
+    text-align: center;
+}
