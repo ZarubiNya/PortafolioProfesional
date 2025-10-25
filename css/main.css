@@ -8,47 +8,60 @@ h1,h2,h3{
 }
 body{
     font-family: "Public Sans", sans-serif;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250401/pngtree-amazing-blue-and-purple-galaxy-background-with-stars-in-the-night-image_17161504.jpg);
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 header {
-    background-color: #BC66F4;
+    background-color: #50698D;
     text-align: center;
     color: #ffffff;
-    border-bottom: solid 5px #44215c; /* ESTE ES UN COMENTARIO */
+    border-bottom: solid 5px #102B53; /* ESTE ES UN COMENTARIO */
     padding: 30px 0; /*padding: 30px(arriba/abajo) 0(derecha/izquierda)*/
     /*TOP RIGHT BOTTOM LEFT*/
 }
 
 nav{
-    background-color: #3b3c81;
+    background-color: #4E7AB1;
     text-align: center;
     padding: 20px 20px;
-    border-bottom: solid 5px #8880a1;
+    border-bottom: solid 5px #50698D;
 }
 
 nav a{
     text-decoration: none;
     font-size: 20px;
     text-transform: capitalize;
-    width: 30%;
-    background-color: #7b6eac;
+    width: 40%;
+    background-color: #4E7AB1;
     border-width: solid 3px #1d062e;
-    padding: 10px 30px;
-    border-radius: 5px;
-    color: #220a31;
+    padding: 10px 60px;
+
+    color: #ffffff;
 }
 
 nav a:hover{
-    background-color: #a598d4;
+    background-color: #6b99d1;
+    color: #1d062e;
 }
 
 #bienvenida{
-    padding: 30px;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
 #bienvenida p{
-    padding: 10px;
+    padding: 20px 90px;
+}
+
+#bienvenida img{
+    box-shadow: 0 0 10px #3b88ac;
 }
 
 .lista-proyectos{
@@ -56,16 +69,45 @@ nav a:hover{
 }
 
 #proyectos{
-    background-color: #afdbe9;
-    padding: 30px 20px;
+    background-color: #7D9FC0;
+    padding: 30px 20px 60px 20px;
     text-align: center;
+    clear: both;
+    border-bottom: solid 5px #102B53;
+    border-top: solid 5px #102B53;
+}
+
+#proyectos h2{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .proyecto{
     width: 30%;
+    background-color: #a3c1df;
     border: solid 2px #44215c;
     padding: 10px;
     border-radius: 10px; /*redondea bordes*/
+    transition: transform 0.5s ease;
+}
+
+.proyecto img{
+    display: block;
+    max-height: 0; /* Oculta el contenido visualmente */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.proyecto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #e6f6ffe0;
+
+}
+
+.proyecto:hover img{
+    max-height: 150px;
 }
 
 .proyecto h3{
@@ -73,33 +115,68 @@ nav a:hover{
 }
 
 #competencias{
-    padding: 30px 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffffff;
 }
 
 #competencias h2{
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
-    clear: both;
 }
+
+#competencias h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 
 #competencias ul{
     list-style-type: square;
     padding: 10px;
     display:flex;
-    clear: both;
 }
 
 #competencias ul li{
     background-color: #3b88ac;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 45px;
     border-radius: 10px;
-    clear: both;
+    text-align: center;
+}
+
+#competencias img{
+    max-height: 100px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.lenguajes{
+    transition: transform 0.5s ease;
+}
+
+.lenguajes:hover {
+    transform:scale(1.1);
+}
+
+.lista-config{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 #contacto{
     padding: 30px;
     border-top:2px dashed #3b88ac;
+    background-color: #d7e6f5;
+}
+
+#contacto h2, p{
+    padding: 10px;
 }
 
 .campos{
@@ -140,9 +217,9 @@ nav a:hover{
 
 footer{
     padding: 30px 20px;
-    background-color: #3b3c81;
+    background-color: #50698D;
     color: #ffffff;
     font-size: 14px;
-    border-top: solid 5px #7b6eac;
+    border-top: solid 5px #102B53;
     text-align: center;
 }
